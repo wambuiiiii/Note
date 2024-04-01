@@ -151,7 +151,9 @@ Partial Class Form2
         ClientSize = New Size(489, 648)
         Controls.Add(Panel1)
         Margin = New Padding(2)
+        MaximizeBox = False
         Name = "Form2"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()

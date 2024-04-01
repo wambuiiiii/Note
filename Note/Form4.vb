@@ -6,7 +6,7 @@
 
         ' Calculate the position for the new folder
         Dim x As Integer = 50 ' Set initial x-coordinate to the edge of the page
-        Dim y As Integer = RoundButton2.Location.Y + RoundButton2.Height + 60 ' Set y-coordinate below the last button
+        Dim y As Integer = 50 ' Set y-coordinate below the last button
         For Each control As Control In Me.Controls
             If TypeOf control Is folderControl Then
                 Dim folder As folderControl = DirectCast(control, folderControl)
@@ -37,6 +37,10 @@
     End Sub
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class
