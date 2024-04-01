@@ -37,5 +37,10 @@
     End Sub
 
 
+<<<<<<< HEAD
 End Class
 
+=======
+    End Sub
+End Class
+>>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555

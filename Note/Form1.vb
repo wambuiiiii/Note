@@ -2,27 +2,11 @@
 
 Public Class Form1
 
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-        ' Create an instance of Form1
-
-
-
-
-        Dim button As New Form2
-
-
-        button.Show()
-        button.Focus()
-        Me.Hide()
-
-    End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
+<<<<<<< HEAD
     ' Check if username follows the right criteria
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If String.IsNullOrWhiteSpace(TextBox1.Text) Then
@@ -54,10 +38,31 @@ Public Class Form1
         ' Redirect to login page
         Form2.Show()
         Me.Hide()
+=======
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+>>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
 
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
 
     End Sub
+<<<<<<< HEAD
 End Class
+=======
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim form2Instance As New Form2()
+
+        ' Show Form2
+        form2Instance.Show()
+
+        ' Optionally, hide Form1 if you don't want it to remain visible
+        Me.Hide()
+    End Sub
+End Class
+>>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555

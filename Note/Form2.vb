@@ -7,6 +7,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+<<<<<<< HEAD
         ' Check if email follows the right criteria
         Dim emailRegex As New Regex("^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")
         If Not emailRegex.IsMatch(TextBox2.Text) Then
@@ -30,7 +31,26 @@ Public Class Form2
         ' Redirect to home page
         Form3.Show()
         Me.Hide()
+=======
+        Dim form3Instance As New Form3()
+>>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
 
+        ' Show Form2
+        form3Instance.Show()
+
+        ' Optionally, hide Form1 if you don't want it to remain visible
+        Me.Hide()
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
 
         'Dim folders As New Form3
         'folders.Show()
