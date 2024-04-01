@@ -24,50 +24,54 @@ Partial Class Form4
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Label1 = New Label()
-        Button2 = New Button()
-        Button3 = New Button()
+        RoundButton1 = New RoundButton()
+        RoundButton2 = New RoundButton()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(693, 8)
         Label1.Name = "Label1"
         Label1.Size = New Size(166, 50)
         Label1.TabIndex = 1
         Label1.Text = "My Notes"
         ' 
-        ' Button2
+        ' RoundButton1
         ' 
-        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
-        Button2.BackgroundImageLayout = ImageLayout.Center
-        Button2.Location = New Point(12, 12)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(48, 48)
-        Button2.TabIndex = 2
-        Button2.UseVisualStyleBackColor = True
+        RoundButton1.BackColor = Color.Transparent
+        RoundButton1.FlatAppearance.BorderSize = 0
+        RoundButton1.FlatStyle = FlatStyle.Flat
+        RoundButton1.Image = CType(resources.GetObject("RoundButton1.Image"), Image)
+        RoundButton1.Location = New Point(12, 19)
+        RoundButton1.Name = "RoundButton1"
+        RoundButton1.Size = New Size(50, 50)
+        RoundButton1.TabIndex = 4
+        RoundButton1.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' RoundButton2
         ' 
-        Button3.BackColor = SystemColors.ActiveCaptionText
-        Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
-        Button3.Location = New Point(94, 8)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(57, 56)
-        Button3.TabIndex = 3
-        Button3.UseVisualStyleBackColor = False
+        RoundButton2.BackColor = Color.Transparent
+        RoundButton2.FlatAppearance.BorderSize = 0
+        RoundButton2.FlatStyle = FlatStyle.Flat
+        RoundButton2.Image = CType(resources.GetObject("RoundButton2.Image"), Image)
+        RoundButton2.Location = New Point(115, 22)
+        RoundButton2.Name = "RoundButton2"
+        RoundButton2.Size = New Size(47, 47)
+        RoundButton2.TabIndex = 5
+        RoundButton2.UseVisualStyleBackColor = False
         ' 
         ' Form4
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         AutoSize = True
         BackColor = SystemColors.InactiveBorder
         ClientSize = New Size(1163, 450)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
+        Controls.Add(RoundButton2)
+        Controls.Add(RoundButton1)
         Controls.Add(Label1)
         Name = "Form4"
         Text = "Form4"
@@ -77,6 +81,6 @@ Partial Class Form4
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents RoundButton1 As RoundButton
+    Friend WithEvents RoundButton2 As RoundButton
 End Class

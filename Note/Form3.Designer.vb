@@ -29,6 +29,7 @@ Partial Class Form3
         Label1 = New Label()
         Button4 = New Button()
         TextBox1 = New TextBox()
+        Button5 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -58,7 +59,7 @@ Partial Class Form3
         ' 
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
         Button3.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.Location = New Point(807, 125)
+        Button3.Location = New Point(793, 125)
         Button3.Name = "Button3"
         Button3.Size = New Size(230, 294)
         Button3.TabIndex = 2
@@ -91,6 +92,16 @@ Partial Class Form3
         TextBox1.Size = New Size(320, 31)
         TextBox1.TabIndex = 5
         ' 
+        ' Button5
+        ' 
+        Button5.Font = New Font("Rage Italic", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.Location = New Point(83, 30)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(187, 41)
+        Button5.TabIndex = 6
+        Button5.Text = "Add Folder"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -99,6 +110,7 @@ Partial Class Form3
         AutoSize = True
         BackColor = Color.WhiteSmoke
         ClientSize = New Size(1825, 693)
+        Controls.Add(Button5)
         Controls.Add(TextBox1)
         Controls.Add(Button4)
         Controls.Add(Label1)
@@ -117,4 +129,5 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button5 As Button
 End Class

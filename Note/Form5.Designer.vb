@@ -49,7 +49,6 @@ Partial Class Form5
         SaveFileDialog1 = New SaveFileDialog()
         FontDialog1 = New FontDialog()
         ColorDialog1 = New ColorDialog()
-        Button2 = New Button()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -72,7 +71,7 @@ Partial Class Form5
         ' TextBox2
         ' 
         TextBox2.BackColor = Color.WhiteSmoke
-        TextBox2.Location = New Point(-1, 64)
+        TextBox2.Location = New Point(-1, 40)
         TextBox2.Margin = New Padding(4, 5, 4, 5)
         TextBox2.Multiline = True
         TextBox2.Name = "TextBox2"
@@ -103,37 +102,37 @@ Partial Class Form5
         ' 
         NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         NewToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.N
-        NewToolStripMenuItem.Size = New Size(213, 34)
+        NewToolStripMenuItem.Size = New Size(270, 34)
         NewToolStripMenuItem.Text = "New"
         ' 
         ' SaveToolStripMenuItem
         ' 
         SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         SaveToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.S
-        SaveToolStripMenuItem.Size = New Size(213, 34)
+        SaveToolStripMenuItem.Size = New Size(270, 34)
         SaveToolStripMenuItem.Text = "Save"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(210, 6)
+        ToolStripSeparator1.Size = New Size(267, 6)
         ' 
         ' PrintToolStripMenuItem
         ' 
         PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         PrintToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.P
-        PrintToolStripMenuItem.Size = New Size(213, 34)
+        PrintToolStripMenuItem.Size = New Size(270, 34)
         PrintToolStripMenuItem.Text = "Print"
         ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
-        ToolStripSeparator2.Size = New Size(210, 6)
+        ToolStripSeparator2.Size = New Size(267, 6)
         ' 
         ' BackToolStripMenuItem
         ' 
         BackToolStripMenuItem.Name = "BackToolStripMenuItem"
-        BackToolStripMenuItem.Size = New Size(213, 34)
+        BackToolStripMenuItem.Size = New Size(270, 34)
         BackToolStripMenuItem.Text = "Back"
         ' 
         ' EditToolStripMenuItem
@@ -147,40 +146,40 @@ Partial Class Form5
         ' 
         UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
         UndoToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.Z
-        UndoToolStripMenuItem.Size = New Size(270, 34)
+        UndoToolStripMenuItem.Size = New Size(248, 34)
         UndoToolStripMenuItem.Text = "Undo"
         ' 
         ' CopyToolStripMenuItem
         ' 
         CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         CopyToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.C
-        CopyToolStripMenuItem.Size = New Size(270, 34)
+        CopyToolStripMenuItem.Size = New Size(248, 34)
         CopyToolStripMenuItem.Text = "Copy"
         ' 
         ' CutToolStripMenuItem
         ' 
         CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         CutToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.X
-        CutToolStripMenuItem.Size = New Size(270, 34)
+        CutToolStripMenuItem.Size = New Size(248, 34)
         CutToolStripMenuItem.Text = "Cut"
         ' 
         ' PasteToolStripMenuItem
         ' 
         PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         PasteToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.P
-        PasteToolStripMenuItem.Size = New Size(270, 34)
+        PasteToolStripMenuItem.Size = New Size(248, 34)
         PasteToolStripMenuItem.Text = "Paste"
         ' 
         ' ToolStripSeparator3
         ' 
         ToolStripSeparator3.Name = "ToolStripSeparator3"
-        ToolStripSeparator3.Size = New Size(267, 6)
+        ToolStripSeparator3.Size = New Size(245, 6)
         ' 
         ' SelectAllToolStripMenuItem
         ' 
         SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         SelectAllToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.A
-        SelectAllToolStripMenuItem.Size = New Size(270, 34)
+        SelectAllToolStripMenuItem.Size = New Size(248, 34)
         SelectAllToolStripMenuItem.Text = "Select All"
         ' 
         ' HelpToolStripMenuItem
@@ -219,23 +218,12 @@ Partial Class Form5
         ' 
         PrintDialog1.UseEXDialog = True
         ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.WhiteSmoke
-        Button2.Location = New Point(-1, 38)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(112, 29)
-        Button2.TabIndex = 10
-        Button2.Text = "Title"
-        Button2.UseVisualStyleBackColor = False
-        ' 
         ' Form5
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
         ClientSize = New Size(1105, 1050)
-        Controls.Add(Button2)
         Controls.Add(TextBox2)
         Controls.Add(Button1)
         Controls.Add(MenuStrip1)
@@ -275,6 +263,5 @@ Partial Class Form5
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents FontDialog1 As FontDialog
     Friend WithEvents ColorDialog1 As ColorDialog
-    Friend WithEvents Button2 As Button
 End Class
 

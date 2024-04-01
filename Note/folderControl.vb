@@ -1,6 +1,8 @@
 ﻿Public Class folderControl
     Inherits UserControl
 
+    Friend Title As String
+
     Public Sub New()
         ' Initialize the control
         InitializeComponent()
