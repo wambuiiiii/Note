@@ -31,8 +31,9 @@ Partial Class Form4
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(693, 8)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(809, 9)
         Label1.Name = "Label1"
         Label1.Size = New Size(166, 50)
         Label1.TabIndex = 1
@@ -56,7 +57,7 @@ Partial Class Form4
         RoundButton2.FlatAppearance.BorderSize = 0
         RoundButton2.FlatStyle = FlatStyle.Flat
         RoundButton2.Image = CType(resources.GetObject("RoundButton2.Image"), Image)
-        RoundButton2.Location = New Point(115, 22)
+        RoundButton2.Location = New Point(92, 21)
         RoundButton2.Name = "RoundButton2"
         RoundButton2.Size = New Size(47, 47)
         RoundButton2.TabIndex = 5
@@ -64,12 +65,13 @@ Partial Class Form4
         ' 
         ' Form4
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         AutoSize = True
-        BackColor = SystemColors.InactiveBorder
-        ClientSize = New Size(1163, 450)
+        BackColor = Color.Teal
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(1554, 673)
         Controls.Add(RoundButton2)
         Controls.Add(RoundButton1)
         Controls.Add(Label1)

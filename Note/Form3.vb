@@ -1,8 +1,6 @@
 ﻿Public Class Form3
 
 
-    Private folders As New List(Of UserControl1)()
-    Private folder As Control
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim note As New Form4
@@ -15,7 +13,7 @@
         Dim newFolder As New UserControl1
 
         ' Calculate the position for the new folder
-        Dim x As Integer = Button3.Location.X + 340 ' Set initial x-coordinate to the edge of the page
+        Dim x As Integer = Button3.Location.X + 350 ' Set initial x-coordinate to the edge of the page
         Dim y As Integer = Button3.Location.Y ' Set y-coordinate below the last button
         For Each control As Control In Me.Controls
             If TypeOf control Is UserControl1 Then
@@ -37,14 +35,22 @@
 
         ' Add the new folder control to the form
         Me.Controls.Add(newFolder)
-        folders.Add(newFolder)
+
 
     End Sub
-    Public Sub AddExistingFolders()
-        For Each folder As UserControl1 In folders
 
-        Next
-        Me.Controls.Add(folder)
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim note As New Form4
+        note.Show()
+        Me.Hide()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim note As New Form4
+        note.Show()
+        Me.Hide()
+    End Sub
+
 
 End Class
