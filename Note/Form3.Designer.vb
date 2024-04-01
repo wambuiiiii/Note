@@ -37,6 +37,7 @@ Partial Class Form3
         closemenu = New Timer(components)
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
+        Button5 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -68,8 +69,12 @@ Partial Class Form3
         ' 
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
         Button3.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+
         Button3.Location = New Point(874, 78)
         Button3.Margin = New Padding(2)
+
+        Button3.Location = New Point(793, 125)
+
         Button3.Name = "Button3"
         Button3.Size = New Size(184, 235)
         Button3.TabIndex = 2
@@ -113,6 +118,7 @@ Partial Class Form3
         TextBox1.Size = New Size(281, 27)
         TextBox1.TabIndex = 5
         ' 
+
         ' Panel1
         ' 
         Panel1.BackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
@@ -152,6 +158,17 @@ Partial Class Form3
         ' 
         ' closemenu
         ' 
+
+        ' Button5
+        ' 
+        Button5.Font = New Font("Rage Italic", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.Location = New Point(83, 30)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(187, 41)
+        Button5.TabIndex = 6
+        Button5.Text = "Add Folder"
+        Button5.UseVisualStyleBackColor = True
+
         ' 
         ' Form3
         ' 
@@ -160,17 +177,29 @@ Partial Class Form3
         AutoScroll = True
         AutoSize = True
         BackColor = Color.WhiteSmoke
+
         BackgroundImageLayout = ImageLayout.Center
         ClientSize = New Size(1460, 593)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Margin = New Padding(2)
+
+        ClientSize = New Size(1825, 693)
+        Controls.Add(Button5)
+        Controls.Add(TextBox1)
+        Controls.Add(Button4)
+        Controls.Add(Label1)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
+
         Name = "Form3"
         Text = "Form3"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         ResumeLayout(False)
+
     End Sub
 
     Friend WithEvents Button1 As Button
@@ -179,9 +208,13 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents TextBox1 As TextBox
+
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents openmenu As Timer
     Friend WithEvents closemenu As Timer
+
+    Friend WithEvents Button5 As Button
+
 End Class
