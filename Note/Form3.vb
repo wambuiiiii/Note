@@ -1,7 +1,4 @@
 Imports System.Runtime.InteropServices
-
-
-﻿Imports System.Runtime.InteropServices
 Public Class Form3
     Dim drag As Boolean
     Dim mousex As Integer
@@ -10,6 +7,7 @@ Public Class Form3
     Dim mnoc As Boolean
     Dim borderSize As Integer = 5
     Private border As Form = New Form()
+
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mnoc = True
         mnop = False
@@ -18,23 +16,7 @@ Public Class Form3
         border.ShowInTaskbar = False
         border.BackColor = Color.DarkGray
         border.Enabled = False
-
     End Sub
-
-﻿Public Class Form3
-
-
-    Private folders As New List(Of UserControl1)()
-    Private folder As Control
-
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim note As New Form4
-        note.Show()
-        Me.Hide()
-
-    End Sub
-
 
     Private Sub Panel2_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel2.MouseDown
         drag = True
@@ -52,6 +34,69 @@ Public Class Form3
     Private Sub Panel2_MouseUp(sender As Object, e As MouseEventArgs) Handles Panel2.MouseUp
         drag = False
     End Sub
+
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim note As New Form4
+        note.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim newFolder As New UserControl1
+
+        ' Calculate the position for the new folder
+        Dim x As Integer = Button3.Location.X + 350 ' Set initial x-coordinate to the edge of the page
+        Dim y As Integer = Button3.Location.Y ' Set y-coordinate below the last button
+        For Each control As Control In Me.Controls
+            If TypeOf control Is UserControl1 Then
+                Dim folder As UserControl1 = DirectCast(control, UserControl1)
+                If folder.Location.X + folder.Width + 125 < Me.ClientSize.Width Then
+                    ' Move to the next position
+                    x = folder.Location.X + folder.Width + 125
+                    y = folder.Location.Y
+                Else
+                    ' Start a new row
+                    x = 83
+                    y = folder.Location.Y + folder.Height + 60
+                End If
+            End If
+        Next
+
+        ' Set the location of the new folder
+        newFolder.Location = New Point(x, y)
+
+        ' Add the new folder control to the form
+        Me.Controls.Add(newFolder)
+
+
+    End Sub
+
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim note As New Form4
+        note.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim note As New Form4
+        note.Show()
+        Me.Hide()
+    End Sub
+    Private Sub UserControl1_Click(sender As Object, e As EventArgs)
+        Dim note As New Form4
+        note.Show()
+        Hide()
+    End Sub
+    Private Sub UserControl2_Click(sender As Object, e As EventArgs) Handles MyBase.Click
+        Dim note As New Form4
+        note.Show()
+        Me.Hide()
+    End Sub
+
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         If Panel1.Size.Width < 175 Then
@@ -87,7 +132,6 @@ Public Class Form3
             Panel2.Visible = True
         End If
     End Sub
-
     Private Sub refreshborder()
         border.Show()
         border.Size = New Size(Me.Width + borderSize * 2, Me.Height + borderSize * 2)
@@ -101,39 +145,7 @@ Public Class Form3
     Public Const SWP_NOSIZE As Integer = &H1
     Public Const SWP_NOACTIVATE As Integer = &H10
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dim newFolder As New UserControl1
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
 
-        ' Calculate the position for the new folder
-        Dim x As Integer = Button3.Location.X + 340 ' Set initial x-coordinate to the edge of the page
-        Dim y As Integer = Button3.Location.Y ' Set y-coordinate below the last button
-        For Each control As Control In Me.Controls
-            If TypeOf control Is UserControl1 Then
-                Dim folder As UserControl1 = DirectCast(control, UserControl1)
-                If folder.Location.X + folder.Width + 125 < Me.ClientSize.Width Then
-                    ' Move to the next position
-                    x = folder.Location.X + folder.Width + 125
-                    y = folder.Location.Y
-                Else
-                    ' Start a new row
-                    x = 83
-                    y = folder.Location.Y + folder.Height + 60
-                End If
-            End If
-        Next
-
-        ' Set the location of the new folder
-        newFolder.Location = New Point(x, y)
-
-        ' Add the new folder control to the form
-        Me.Controls.Add(newFolder)
-        folders.Add(newFolder)
-
-    End Sub
-    Public Sub AddExistingFolders()
-        For Each folder As UserControl1 In folders
-
-        Next
-        Me.Controls.Add(folder)
     End Sub
 End Class
