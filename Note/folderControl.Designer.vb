@@ -23,35 +23,24 @@ Partial Class folderControl
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label1 = New Label()
-        Label2 = New Label()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(29, 86)
+        Label1.BackColor = SystemColors.InactiveCaption
+        Label1.Font = New Font("Rage Italic", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(3, 99)
         Label1.Name = "Label1"
-        Label1.Size = New Size(126, 50)
+        Label1.Size = New Size(176, 45)
         Label1.TabIndex = 0
-        Label1.Text = "Blank "
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(40, 136)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(90, 50)
-        Label2.TabIndex = 1
-        Label2.Text = "Note" & vbCrLf
+        Label1.Text = "Blank Note"
         ' 
         ' folderControl
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.InactiveCaption
-        Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "folderControl"
         Size = New Size(191, 255)
@@ -61,6 +50,5 @@ Partial Class folderControl
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
 
 End Class

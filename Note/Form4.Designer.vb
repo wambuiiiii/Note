@@ -23,28 +23,16 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
-        Button1 = New Button()
         Label1 = New Label()
         Button2 = New Button()
         Button3 = New Button()
         SuspendLayout()
         ' 
-        ' Button1
-        ' 
-        Button1.BackColor = SystemColors.InactiveCaption
-        Button1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(24, 111)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(191, 255)
-        Button1.TabIndex = 0
-        Button1.Text = "Blank Note"
-        Button1.UseVisualStyleBackColor = False
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(618, -1)
+        Label1.Location = New Point(693, 8)
         Label1.Name = "Label1"
         Label1.Size = New Size(166, 50)
         Label1.TabIndex = 1
@@ -64,7 +52,7 @@ Partial Class Form4
         ' 
         Button3.BackColor = SystemColors.ActiveCaptionText
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
-        Button3.Location = New Point(82, 12)
+        Button3.Location = New Point(94, 8)
         Button3.Name = "Button3"
         Button3.Size = New Size(57, 56)
         Button3.TabIndex = 3
@@ -74,11 +62,13 @@ Partial Class Form4
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(917, 450)
+        AutoScroll = True
+        AutoSize = True
+        BackColor = SystemColors.InactiveBorder
+        ClientSize = New Size(1163, 450)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Label1)
-        Controls.Add(Button1)
         Name = "Form4"
         Text = "Form4"
         ResumeLayout(False)
