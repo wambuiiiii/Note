@@ -31,6 +31,8 @@ Public Class Form1
         email = Me.TextBox2.Text
         password = Me.TextBox3.Text
 
+        ' Wait for a brief moment (e.g., 500 milliseconds) before hiding the characters
+        Threading.Thread.Sleep(3000)
 
         Dim connectionString As String = "Server=127.0.0.1;Database=notebook;username=Mutugi;password=keepitreal19"
         Dim connection As New MySqlConnection(connectionString)
@@ -43,6 +45,12 @@ Public Class Form1
         cmd.Parameters.AddWithValue("@Password", Me.TextBox3.Text)
         cmd.ExecuteNonQuery()
 
+        If Not passwordRegex.IsMatch(TextBox3.Text) Then
+            MessageBox.Show("Password must be at least 12 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            'txtConfirmPassword.Clear()
+            TextBox3.Focus()
+            Return
+        End If
 
 
 
@@ -51,4 +59,11 @@ Public Class Form1
         Me.Hide()
         Form2.Show()
     End Sub
+
+
+
+
+    ' Optionally, hide Form1 if you don't want it to remain visible
+
 End Class
+

@@ -14,6 +14,8 @@
         Me.Hide()
 
 
-        MessageBox.Show("Folder Clicked!") ' For example, show a message box
+
     End Sub
+
+
 End Class

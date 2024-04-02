@@ -28,8 +28,8 @@ Partial Class folderControl
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.BackColor = SystemColors.InactiveCaption
-        Label1.Font = New Font("Rage Italic", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.BackColor = SystemColors.GradientInactiveCaption
+        Label1.Font = New Font("Rage Italic", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(3, 99)
         Label1.Name = "Label1"
         Label1.Size = New Size(176, 45)
@@ -40,7 +40,7 @@ Partial Class folderControl
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.InactiveCaption
+        BackColor = SystemColors.GradientInactiveCaption
         Controls.Add(Label1)
         Name = "folderControl"
         Size = New Size(191, 255)
