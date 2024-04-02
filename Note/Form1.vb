@@ -4,9 +4,9 @@ Public Class Form1
 
 
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles Me.TextChanged
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles MyBase.TextChanged
         ' Store the current text of the TextBox
-        Dim currentText As String = TextBox3.Text
+        Dim currentText = TextBox3.Text
 
         ' Hide the text by replacing each character with a bullet
         TextBox3.Text = New String("●", currentText.Length)
@@ -65,12 +65,13 @@ Public Class Form1
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Dim form2Instance As New Form2()
 
-        ' Show Form2
+
         form2Instance.Show()
 
-        ' Optionally, hide Form1 if you don't want it to remain visible
+
         Me.Hide()
     End Sub
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

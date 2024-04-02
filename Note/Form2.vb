@@ -4,9 +4,9 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Public Class Form2
 
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Me.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles MyBase.TextChanged
         ' Store the current text of the TextBox
-        Dim currentText As String = TextBox1.Text
+        Dim currentText = TextBox1.Text
 
         ' Hide the text by replacing each character with a bullet
         TextBox1.Text = New String("●", currentText.Length)

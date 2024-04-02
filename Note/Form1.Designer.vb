@@ -44,7 +44,7 @@ Partial Class Form1
         ' Button1
         ' 
         Button1.BackColor = SystemColors.GradientInactiveCaption
-        Button1.Location = New Point(69, 431)
+        Button1.Location = New Point(69, 428)
         Button1.Name = "Button1"
         Button1.Size = New Size(346, 39)
         Button1.TabIndex = 0
@@ -65,7 +65,7 @@ Partial Class Form1
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(153, 26)
+        Panel1.Location = New Point(81, 12)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(533, 624)
         Panel1.TabIndex = 1
@@ -78,9 +78,9 @@ Partial Class Form1
         LinkLabel1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
         LinkLabel1.LinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        LinkLabel1.Location = New Point(50, 497)
+        LinkLabel1.Location = New Point(87, 497)
         LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(383, 30)
+        LinkLabel1.Size = New Size(319, 25)
         LinkLabel1.TabIndex = 9
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Already have an account? Click here to login "
@@ -90,7 +90,7 @@ Partial Class Form1
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(31, 348)
+        PictureBox3.Location = New Point(34, 346)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(32, 31)
         PictureBox3.TabIndex = 7
@@ -99,7 +99,7 @@ Partial Class Form1
         ' PictureBox2
         ' 
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(37, 228)
+        PictureBox2.Location = New Point(36, 228)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(26, 31)
         PictureBox2.TabIndex = 6
@@ -108,7 +108,7 @@ Partial Class Form1
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(31, 108)
+        PictureBox1.Location = New Point(31, 107)
         PictureBox1.Margin = New Padding(0)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(32, 31)
@@ -117,16 +117,16 @@ Partial Class Form1
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(69, 348)
+        TextBox3.Location = New Point(69, 350)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(346, 31)
+        TextBox3.Size = New Size(346, 27)
         TextBox3.TabIndex = 3
         ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(69, 232)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(352, 31)
+        TextBox2.Size = New Size(346, 27)
         TextBox2.TabIndex = 4
         ' 
         ' TextBox1
@@ -134,7 +134,7 @@ Partial Class Form1
         TextBox1.Location = New Point(69, 111)
         TextBox1.Margin = New Padding(0)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(352, 31)
+        TextBox1.Size = New Size(346, 27)
         TextBox1.TabIndex = 3
         ' 
         ' Label3
@@ -142,7 +142,7 @@ Partial Class Form1
         Label3.AutoSize = True
         Label3.Location = New Point(69, 313)
         Label3.Name = "Label3"
-        Label3.Size = New Size(97, 25)
+        Label3.Size = New Size(80, 20)
         Label3.TabIndex = 2
         Label3.Text = "Password:"
         ' 
@@ -151,7 +151,7 @@ Partial Class Form1
         Label2.AutoSize = True
         Label2.Location = New Point(69, 200)
         Label2.Name = "Label2"
-        Label2.Size = New Size(63, 25)
+        Label2.Size = New Size(51, 20)
         Label2.TabIndex = 1
         Label2.Text = "Email:"
         ' 
@@ -160,16 +160,18 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.Location = New Point(69, 78)
         Label1.Name = "Label1"
-        Label1.Size = New Size(102, 25)
+        Label1.Size = New Size(84, 20)
         Label1.TabIndex = 0
         Label1.Text = "Username:"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(11F, 25F)
+        AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.GradientActiveCaption
-        ClientSize = New Size(881, 662)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(707, 662)
         Controls.Add(Panel1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         MaximizeBox = False
