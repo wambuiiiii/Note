@@ -4,11 +4,14 @@ Imports MySqlConnector
 Public Class Form1
 
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
 
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles MyBase.TextChanged
         ' Store the current text of the TextBox
         Dim currentText = TextBox3.Text
+
+    End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
@@ -56,6 +59,24 @@ Public Class Form1
 
 
 
+        connection.Close()
+
+        Me.Hide()
+        Form2.Show()
+
+        Me.Hide()
+
+
+
+    End Sub
+
+
+
+
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim form2Instance As New Form2()
+
 
         form2Instance.Show()
 
@@ -65,6 +86,7 @@ Public Class Form1
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
 
     End Sub
 
