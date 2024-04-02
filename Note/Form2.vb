@@ -2,9 +2,22 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form2
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles Me.TextChanged
+        ' Store the current text of the TextBox
+        Dim currentText As String = TextBox1.Text
+
+        ' Hide the text by replacing each character with a bullet
+        TextBox1.Text = New String("●", currentText.Length)
+
+        ' Wait for a brief moment (e.g., 500 milliseconds) before hiding the characters
+        Threading.Thread.Sleep(3000)
+
+        ' After the brief moment, hide the characters by setting UseSystemPasswordChar to True
+        TextBox1.UseSystemPasswordChar = True
     End Sub
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -16,7 +29,8 @@ Public Class Form2
             Return
         End If
 
-
+        TextBox1.UseSystemPasswordChar = True
+        Console.WriteLine("UseSystemPasswordChar set to: " & TextBox1.UseSystemPasswordChar)
         ' Check if password meets the criteria
         Dim passwordRegex As New Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%?&])[A-Za-z\d@$!%?&]{12,}$")
         If Not passwordRegex.IsMatch(TextBox1.Text) Then
@@ -45,9 +59,7 @@ Public Class Form2
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
-    End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
 

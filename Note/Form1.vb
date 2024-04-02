@@ -2,8 +2,20 @@
 
 Public Class Form1
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles Me.TextChanged
+        ' Store the current text of the TextBox
+        Dim currentText As String = TextBox3.Text
+
+        ' Hide the text by replacing each character with a bullet
+        TextBox3.Text = New String("●", currentText.Length)
+
+        ' Wait for a brief moment (e.g., 500 milliseconds) before hiding the characters
+        Threading.Thread.Sleep(3000)
+
+        ' After the brief moment, hide the characters by setting UseSystemPasswordChar to True
+        TextBox3.UseSystemPasswordChar = True
     End Sub
 
 
@@ -24,7 +36,8 @@ Public Class Form1
             TextBox2.Focus()
             Return
         End If
-
+        TextBox3.UseSystemPasswordChar = True
+        Console.WriteLine("UseSystemPasswordChar set to: " & TextBox3.UseSystemPasswordChar)
         ' Check if password meets the criteria
         Dim passwordRegex As New Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%?&])[A-Za-z\d@$!%?&]{12,}$")
 
@@ -57,6 +70,10 @@ Public Class Form1
 
         ' Optionally, hide Form1 if you don't want it to remain visible
         Me.Hide()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 
 

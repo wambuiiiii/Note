@@ -32,7 +32,6 @@ Partial Class Form2
         PictureBox1 = New PictureBox()
         Label2 = New Label()
         Label1 = New Label()
-        RoundButton1 = New RoundButton()
         Panel1.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +68,6 @@ Partial Class Form2
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.ControlLightLight
-        Panel1.Controls.Add(RoundButton1)
         Panel1.Controls.Add(LinkLabel1)
         Panel1.Controls.Add(PictureBox2)
         Panel1.Controls.Add(PictureBox1)
@@ -78,7 +76,7 @@ Partial Class Form2
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(TextBox2)
-        Panel1.Location = New Point(215, 96)
+        Panel1.Location = New Point(205, 94)
         Panel1.Margin = New Padding(2)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(519, 630)
@@ -145,18 +143,6 @@ Partial Class Form2
         Label1.Size = New Size(63, 25)
         Label1.TabIndex = 4
         Label1.Text = "Email:"
-        ' 
-        ' RoundButton1
-        ' 
-        RoundButton1.BackColor = Color.Transparent
-        RoundButton1.BackgroundImage = CType(resources.GetObject("RoundButton1.BackgroundImage"), Image)
-        RoundButton1.FlatAppearance.BorderSize = 0
-        RoundButton1.FlatStyle = FlatStyle.Flat
-        RoundButton1.Location = New Point(455, 303)
-        RoundButton1.Name = "RoundButton1"
-        RoundButton1.Size = New Size(34, 34)
-        RoundButton1.TabIndex = 9
-        RoundButton1.UseVisualStyleBackColor = False
         ' 
         ' Form2
         ' 

@@ -47,10 +47,10 @@ Partial Class Form4
         RoundButton1.FlatAppearance.BorderSize = 0
         RoundButton1.FlatStyle = FlatStyle.Flat
         RoundButton1.Image = CType(resources.GetObject("RoundButton1.Image"), Image)
-        RoundButton1.Location = New Point(22, 11)
+        RoundButton1.Location = New Point(11, 11)
         RoundButton1.Margin = New Padding(2)
         RoundButton1.Name = "RoundButton1"
-        RoundButton1.Size = New Size(50, 50)
+        RoundButton1.Size = New Size(45, 45)
         RoundButton1.TabIndex = 4
         RoundButton1.UseVisualStyleBackColor = False
         ' 
