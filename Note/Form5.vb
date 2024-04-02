@@ -1,5 +1,7 @@
 ﻿
 
+Imports MySqlConnector
+
 Public Class Form5
 
 
@@ -11,9 +13,30 @@ Public Class Form5
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
-        If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
-            My.Computer.FileSystem.WriteAllText(SaveFileDialog1.FileName, TextBox2.Text, False)
-        End If
+
+        Dim notes As String
+        Dim notesname As String
+
+        notes = Me.TextBox2.Text
+        notesname = Me.Name
+
+
+        Dim connectionString As String = "Server=127.0.0.1;Database=notebook;Uid=Mutugi;password=keepitreal19"
+        Dim connection As New MySqlConnection(connectionString)
+
+        Dim query As String = "INSERT INTO notes(notesname, notes) VALUE(@notesname, @notes)"
+        Dim command As New MySqlCommand(query, connection)
+        command.Parameters.AddWithValue("@notesname", Me.Name)
+        command.Parameters.AddWithValue("@notes", Me.TextBox2.Text)
+
+        Try
+            connection.Open()
+            command.ExecuteNonQuery()
+            MessageBox.Show("Data saved successfully!")
+        Catch ex As Exception
+            MessageBox.Show("Error saving data: " & ex.Message)
+        End Try
+        connection.Close()
     End Sub
 
     Private Sub PrintToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintToolStripMenuItem.Click

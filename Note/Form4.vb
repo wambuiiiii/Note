@@ -1,4 +1,6 @@
-﻿Public Class Form4
+﻿Imports MySqlConnector
+
+Public Class Form4
 
 
     Private Sub RoundButton2_Click(sender As Object, e As EventArgs) Handles RoundButton2.Click
@@ -27,6 +29,19 @@
 
         ' Add the new folder control to the form
         Me.Controls.Add(newFolder)
+        Dim folderBrowser As New FolderBrowserDialog()
+        If folderBrowser.ShowDialog() = DialogResult.OK Then
+            Dim oldFolderPath As String = folderBrowser.SelectedPath
+            Dim newFolderName As String = InputBox("Enter the new folder name:", "Rename Folder")
+
+            If Not String.IsNullOrEmpty(newFolderName) Then
+                Dim newFolderPath As String = IO.Path.Combine(IO.Path.GetDirectoryName(oldFolderPath), newFolderName)
+                FileSystem.RenameDirectory(oldFolderPath, newFolderPath)
+                MessageBox.Show("Folder renamed successfully!")
+            Else
+                MessageBox.Show("Please enter a valid folder name.")
+            End If
+        End If
     End Sub
 
     Private Sub RoundButton1_Click(sender As Object, e As EventArgs) Handles RoundButton1.Click
@@ -36,7 +51,20 @@
 
     End Sub
 
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Path\To\Your\Database.accdb"
+        Dim query As String = "SELECT NoteID, Title, Content FROM Notes"
 
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+            Dim adapter As New MySqlCommand(query, connection)
+            Dim notesTable As New DataTable()
+            adapter.Fill(notesTable)
+
+            ' Assuming you have a DataGridView named dgvNotes on your form:
+            dgvNotes.DataSource = notesTable
+        End Using
+    End Sub
 End Class
 
 

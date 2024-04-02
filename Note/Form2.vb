@@ -1,5 +1,7 @@
-﻿Imports System.Text.RegularExpressions
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+﻿Imports Azure.Identity
+Imports MySqlConnector
+Imports System.Diagnostics.Eventing
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 
 Public Class Form2
 
@@ -20,52 +22,30 @@ Public Class Form2
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim email As String
+        Dim password As String
 
-        ' Check if email follows the right criteria
-        Dim emailRegex As New Regex("^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")
-        If Not emailRegex.IsMatch(TextBox2.Text) Then
-            MessageBox.Show("Please enter a valid email address.", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            TextBox2.Focus()
-            Return
+        email = Me.TextBox1.Text
+        password = Me.TextBox2.Text
+
+        Dim connectionString As String = "Server=127.0.0.1;Database=notebook;Uid=Mutugi;password=keepitreal19"
+        Dim connection As New MySqlConnection(connectionString)
+        connection.Open()
+
+        Dim query As String = "SELECT * FROM users WHERE password = @password AND email = @email"
+        Dim command As New MySqlCommand(query, connection)
+        command.Parameters.AddWithValue("@email", Me.TextBox2.Text)
+        command.Parameters.AddWithValue("@password", Me.TextBox1.Text)
+        Dim Reader As MySqlDataReader = command.ExecuteReader()
+        If (Reader.Read()) Then
+            Dim folders As New Form3
+            folders.Show()
+            Me.Hide()
+        Else
+            MsgBox("Wrong credentials")
         End If
+        connection.Close()
 
-        TextBox1.UseSystemPasswordChar = True
-        Console.WriteLine("UseSystemPasswordChar set to: " & TextBox1.UseSystemPasswordChar)
-        ' Check if password meets the criteria
-        Dim passwordRegex As New Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%?&])[A-Za-z\d@$!%?&]{12,}$")
-        If Not passwordRegex.IsMatch(TextBox1.Text) Then
-            MessageBox.Show("Password must be at least 12 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.", "Invalid Password", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            'txtConfirmPassword.Clear()
-            TextBox1.Focus()
-            Return
-        End If
-
-        ' If username, email and password meet criteria, log in is successful
-        MessageBox.Show("Log in successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        ' Redirect to home page
-
-
-        Dim form3Instance As New Form3()
-
-
-        ' Show Form2
-        form3Instance.Show()
-
-        ' Optionally, hide Form1 if you don't want it to remain visible
-        Me.Hide()
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-
-    End Sub
-
-
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-
-        Dim folders As New Form3
-        folders.Show()
-        Me.Hide()
 
         Dim form1Instance As New Form1()
 

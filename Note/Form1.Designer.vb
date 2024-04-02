@@ -75,7 +75,7 @@ Partial Class Form1
         LinkLabel1.ActiveLinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         LinkLabel1.AutoSize = True
         LinkLabel1.DisabledLinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        LinkLabel1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        LinkLabel1.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold)
         LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
         LinkLabel1.LinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         LinkLabel1.Location = New Point(87, 497)
@@ -166,14 +166,14 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(9F, 20F)
+        AutoScaleDimensions = New SizeF(9.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.GradientActiveCaption
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(707, 662)
         Controls.Add(Panel1)
-        Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         MaximizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
