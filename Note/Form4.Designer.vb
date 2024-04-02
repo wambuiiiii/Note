@@ -32,14 +32,14 @@ Partial Class Form4
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-<<<<<<< HEAD
+
         Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(809, 9)
-=======
+
         Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(602, 9)
         Label1.Margin = New Padding(2, 0, 2, 0)
->>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
+
         Label1.Name = "Label1"
         Label1.Size = New Size(141, 43)
         Label1.TabIndex = 1
@@ -68,18 +68,17 @@ Partial Class Form4
         RoundButton2.Cursor = Cursors.Hand
         RoundButton2.FlatAppearance.BorderSize = 0
         RoundButton2.FlatStyle = FlatStyle.Flat
-<<<<<<< HEAD
+
         RoundButton2.Image = CType(resources.GetObject("RoundButton2.Image"), Image)
-<<<<<<< HEAD
+
         RoundButton2.Location = New Point(92, 21)
-=======
+
         RoundButton2.Location = New Point(74, 17)
         RoundButton2.Margin = New Padding(2, 2, 2, 2)
->>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
-=======
+
         RoundButton2.Location = New Point(1155, 467)
         RoundButton2.Margin = New Padding(2)
->>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
+
         RoundButton2.Name = "RoundButton2"
         RoundButton2.Size = New Size(77, 60)
         RoundButton2.TabIndex = 5
@@ -87,7 +86,7 @@ Partial Class Form4
         ' 
         ' Form4
         ' 
-<<<<<<< HEAD
+
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
@@ -95,14 +94,14 @@ Partial Class Form4
         BackColor = Color.Teal
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1554, 673)
-=======
+
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         AutoSize = True
         BackColor = Color.WhiteSmoke
         ClientSize = New Size(1243, 538)
->>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
+
         Controls.Add(RoundButton2)
         Controls.Add(RoundButton1)
         Controls.Add(Label1)

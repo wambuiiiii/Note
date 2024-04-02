@@ -37,18 +37,10 @@
     End Sub
 
 
-<<<<<<< HEAD
+
 End Class
 
-=======
-    End Sub
-<<<<<<< HEAD
-End Class
->>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
-=======
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
-End Class
->>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
+
+

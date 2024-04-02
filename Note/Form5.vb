@@ -57,11 +57,11 @@ Public Class Form5
         MsgBox("Developed By Us")
     End Sub
 
-<<<<<<< HEAD
 
-=======
+
+
     Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
 
     End Sub
->>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
+
 End Class

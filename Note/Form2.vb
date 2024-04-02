@@ -7,7 +7,7 @@ Public Class Form2
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-<<<<<<< HEAD
+
         ' Check if email follows the right criteria
         Dim emailRegex As New Regex("^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$")
         If Not emailRegex.IsMatch(TextBox2.Text) Then
@@ -31,9 +31,9 @@ Public Class Form2
         ' Redirect to home page
         Form3.Show()
         Me.Hide()
-=======
+
         Dim form3Instance As New Form3()
->>>>>>> d6b9f6266a2d0d1d94033548a9d19250eda27555
+
 
         ' Show Form2
         form3Instance.Show()
