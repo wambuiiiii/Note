@@ -36,12 +36,17 @@
 
     End Sub
 
-    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+End Class
 
+
+
+
+
+<<<<<<< HEAD
     End Sub
 
 End Class
+=======
+>>>>>>> 82e9248b680ce1eb26a78e1ca1b44f18456de091

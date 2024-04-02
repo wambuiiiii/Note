@@ -103,6 +103,11 @@ Public Class Form3
         note.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
     Private Sub UserControl1_Click(sender As Object, e As EventArgs)
         Dim note As New Form4
         note.Show()
@@ -195,4 +200,5 @@ Public Class Form3
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
     End Sub
+
 End Class

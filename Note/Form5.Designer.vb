@@ -101,37 +101,61 @@ Partial Class Form5
         ' 
         NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         NewToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.N
+
+        NewToolStripMenuItem.Size = New Size(213, 34)
+
         NewToolStripMenuItem.Size = New Size(175, 26)
+
         NewToolStripMenuItem.Text = "New"
         ' 
         ' SaveToolStripMenuItem
         ' 
         SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         SaveToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.S
+
+        SaveToolStripMenuItem.Size = New Size(213, 34)
+
         SaveToolStripMenuItem.Size = New Size(175, 26)
+
         SaveToolStripMenuItem.Text = "Save"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
+
+        ToolStripSeparator1.Size = New Size(210, 6)
+
         ToolStripSeparator1.Size = New Size(172, 6)
+
         ' 
         ' PrintToolStripMenuItem
         ' 
         PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         PrintToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.P
+
+        PrintToolStripMenuItem.Size = New Size(213, 34)
+
         PrintToolStripMenuItem.Size = New Size(175, 26)
+
         PrintToolStripMenuItem.Text = "Print"
         ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
+
+        ToolStripSeparator2.Size = New Size(210, 6)
+
         ToolStripSeparator2.Size = New Size(172, 6)
+
         ' 
         ' BackToolStripMenuItem
         ' 
         BackToolStripMenuItem.Name = "BackToolStripMenuItem"
+
+        BackToolStripMenuItem.Size = New Size(213, 34)
+
         BackToolStripMenuItem.Size = New Size(175, 26)
+
         BackToolStripMenuItem.Text = "Back"
         ' 
         ' EditToolStripMenuItem
