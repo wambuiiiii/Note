@@ -4,13 +4,10 @@ Imports MySqlConnector
 
 Public Class Form1
 
-
-
-
-
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles MyBase.TextChanged
         ' Store the current text of the TextBox
         Dim currentText = TextBox3.Text
+    End Sub
 
     End Sub
 
