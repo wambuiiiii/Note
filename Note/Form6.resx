@@ -117,30 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RoundButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5wAAAOcB8BtYtQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACdSURBVFhH7ZZL
-        CgIxEESDiDcYD+E53Oh+bqMbZRaeRj2U4CUGfQX24MS15Yd+8DbZVEGSTkqS/BIz7PCAUy04UfgZbw/X
-        aKMOv+AcLSj8hBF+xQVayPAMt4c/X7UeN9i+Sc2R0TDbY4S71FQd+EQBZQ64t2CFL++JShwxSlgPYZAl
-        giwRfE2J+kPSoJW6xBLtqMQOtzjRQpL8AaXcAdsAjiK6xERRAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="RoundButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6AAAAOgBhtX2rwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJNSURBVFhH7ZfN
-        q01RGIcP+RpgogzoooyNKKGUf4CR6xYKI8WQEWUgAxNFxH+glAyu2Z3cEUOXKIwYYWSAIsLz7H3WbZ19
-        1z5n7Y9bBn711FrrnL3W713v2u/eezDUGXgFv+BPB77CHOyCbLm4C9+EGTjagVMwD59hK2TJyF28L62D
-        93Cl6GXI6I+Vzd70EO6Xzckyd25fn3owJEtVA9chTFDF33IU/p+lf85AH/pvoJOB/WC/KVMQ1MnAa3Cs
-        KVch6A7cLpuT5cWxgT60ckiWlsNAIy2HgW1wEI7APtgAterLwCo4C8/BOWO+w2PQzBJVDbyB6gQxP2A3
-        xNoBC+Bvd+EQbIY14G6cAB/TXu8BXQ2LcjA2MOk2dFvXQpCLf4RnsNOBMZqGL/AIFg9p1UATue1G7uLr
-        HYikyT1lc0QGaEouFz3UxYA5d7JU5O6UKUnpAnyDLXa6GHgB5jwl53TulNydD3DJTlsDHi6v9cClNM6A
-        ugdPbLQ14MJeu6nolVG57c4lNyDMHTD/Qefgk422Bg6D14Y7wgNnzh2rw+dMkLem56f1S+lecFJTkZJB
-        +XudLsI7G76W37LRUBvBCE4WvaWaZGAWrAfFx4S7oImcDxMLT5Dl1QqXkv+tM7AdRsxr4iXkfJrFL6bW
-        9t+QSqEHLs550Arwu+EtjJTktrK2W14PFL3xcvFr8BPqbt/GMgpz6ZZa4eLnRCwPq5G7+GkH+pQPFmu7
-        5dUKZ5E5D8dBUx44DbrtvUWekrXd8voUfEJaF/xQdYc8cJWcDwZ/ASa62q2S+9ojAAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>

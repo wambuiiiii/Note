@@ -7,16 +7,36 @@ Public Class Form3
     Dim mnoc As Boolean
     Dim borderSize As Integer = 5
     Private border As Form = New Form()
+    Private darkTheme As Boolean = False ' Track the current theme state
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mnoc = True
         mnop = False
         Panel1.Size = New Size(0, Me.Height)
-        border.Opacity = 0.1
-        border.ShowInTaskbar = False
-        border.BackColor = Color.DarkGray
-        border.Enabled = False
+        ApplyTheme()
     End Sub
+
+
+    Private Sub ApplyTheme()
+        If darkTheme Then
+            ' Apply dark theme
+            Panel2.BackColor = Color.FromArgb(49, 54, 63) ' Set the panel's background color to dark
+            For Each ctrl As Control In Me.Controls
+                ctrl.ForeColor = Color.White ' Set the text color of all controls to white
+            Next
+        Else
+            ' Apply light theme
+            Panel2.BackColor = Color.FromArgb(247, 247, 247) ' Set the panel's background color to light
+            For Each ctrl As Control In Me.Controls
+                ctrl.ForeColor = SystemColors.ControlText ' Set the text color of all controls to default
+            Next
+        End If
+    End Sub
+    Private Sub ToggleTheme()
+        darkTheme = Not darkTheme ' Toggle the theme state
+        ApplyTheme() ' Apply the updated theme
+    End Sub
+
 
     Private Sub Panel2_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel2.MouseDown
         drag = True
@@ -108,7 +128,7 @@ Public Class Form3
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles openmenu.Tick
         Do Until Panel1.Size.Width = (175)
-            Panel1.Size = New Size(Panel1.Width + 1, Me.Height)
+            Panel1.Size = New Size(Panel1.Width + 7, Me.Height)
             mnoc = False
             mnop = True
         Loop
@@ -121,7 +141,7 @@ Public Class Form3
 
     Private Sub closemenu_Tick(sender As Object, e As EventArgs) Handles closemenu.Tick
         Do Until Panel1.Size.Width = (0)
-            Panel1.Size = New Size(Panel1.Width - 1, Me.Height)
+            Panel1.Size = New Size(Panel1.Width - 7, Me.Height)
             mnoc = True
             mnop = False
         Loop
@@ -142,7 +162,37 @@ Public Class Form3
     Public Const SWP_NOSIZE As Integer = &H1
     Public Const SWP_NOACTIVATE As Integer = &H10
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs)
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+        Me.DoubleBuffered = True
+        Me.BackColor = Color.FromArgb(64, 64, 64)
+    End Sub
+
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        ToggleTheme()
+    End Sub
+
+    Private Sub parentPanel_Paint(sender As Object, e As PaintEventArgs) Handles parentPanel.Paint
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        ' Navigate to the login screen or another appropriate destination
+        Dim Form2 As New Form2()
+        Form2.Show()
+
+        ' Close or hide the current form
+        Me.Close()
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
     End Sub
 End Class

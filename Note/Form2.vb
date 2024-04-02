@@ -22,6 +22,12 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim form1Instance As New Form1()
 
+        ' Show Form2
+        form1Instance.Show()
+
+        ' Optionally, hide Form1 if you don't want it to remain visible
+        Me.Hide()
     End Sub
 End Class
