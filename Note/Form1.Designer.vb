@@ -80,7 +80,7 @@ Partial Class Form1
         LinkLabel1.LinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         LinkLabel1.Location = New Point(50, 497)
         LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(383, 30)
+        LinkLabel1.Size = New Size(255, 21)
         LinkLabel1.TabIndex = 9
         LinkLabel1.TabStop = True
         LinkLabel1.Text = "Already have an account? Click here to login "
@@ -119,14 +119,14 @@ Partial Class Form1
         ' 
         TextBox3.Location = New Point(69, 348)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(346, 31)
+        TextBox3.Size = New Size(346, 23)
         TextBox3.TabIndex = 3
         ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(69, 232)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(352, 31)
+        TextBox2.Size = New Size(352, 23)
         TextBox2.TabIndex = 4
         ' 
         ' TextBox1
@@ -134,7 +134,7 @@ Partial Class Form1
         TextBox1.Location = New Point(69, 111)
         TextBox1.Margin = New Padding(0)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(352, 31)
+        TextBox1.Size = New Size(352, 23)
         TextBox1.TabIndex = 3
         ' 
         ' Label3
