@@ -60,5 +60,9 @@ Public Class Form1
     End Sub
 
 
+
+
+    ' Optionally, hide Form1 if you don't want it to remain visible
+
 End Class
 

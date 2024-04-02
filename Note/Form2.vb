@@ -29,8 +29,7 @@ Public Class Form2
         ' If username, email and password meet criteria, log in is successful
         MessageBox.Show("Log in successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         ' Redirect to home page
-        Form3.Show()
-        Me.Hide()
+
 
         Dim form3Instance As New Form3()
 
@@ -51,26 +50,15 @@ Public Class Form2
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+
         Dim folders As New Form3
         folders.Show()
         Me.Hide()
 
-        'Dim folders As New Form3
-        'folders.Show()
-        'Me.Hide()
+        Dim form1Instance As New Form1()
 
 
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub RoundButton1_Click(sender As Object, e As EventArgs) Handles RoundButton1.Click
-
-    End Sub
 End Class
