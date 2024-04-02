@@ -31,10 +31,11 @@ Partial Class Form4
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(693, 8)
+        Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(485, 5)
+        Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(166, 50)
+        Label1.Size = New Size(112, 34)
         Label1.TabIndex = 1
         Label1.Text = "My Notes"
         ' 
@@ -44,9 +45,10 @@ Partial Class Form4
         RoundButton1.FlatAppearance.BorderSize = 0
         RoundButton1.FlatStyle = FlatStyle.Flat
         RoundButton1.Image = CType(resources.GetObject("RoundButton1.Image"), Image)
-        RoundButton1.Location = New Point(12, 19)
+        RoundButton1.Location = New Point(8, 11)
+        RoundButton1.Margin = New Padding(2)
         RoundButton1.Name = "RoundButton1"
-        RoundButton1.Size = New Size(50, 50)
+        RoundButton1.Size = New Size(35, 30)
         RoundButton1.TabIndex = 4
         RoundButton1.UseVisualStyleBackColor = False
         ' 
@@ -56,23 +58,25 @@ Partial Class Form4
         RoundButton2.FlatAppearance.BorderSize = 0
         RoundButton2.FlatStyle = FlatStyle.Flat
         RoundButton2.Image = CType(resources.GetObject("RoundButton2.Image"), Image)
-        RoundButton2.Location = New Point(115, 22)
+        RoundButton2.Location = New Point(61, 5)
+        RoundButton2.Margin = New Padding(2)
         RoundButton2.Name = "RoundButton2"
-        RoundButton2.Size = New Size(47, 47)
+        RoundButton2.Size = New Size(61, 46)
         RoundButton2.TabIndex = 5
         RoundButton2.UseVisualStyleBackColor = False
         ' 
         ' Form4
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         AutoSize = True
         BackColor = SystemColors.InactiveBorder
-        ClientSize = New Size(1163, 450)
+        ClientSize = New Size(814, 270)
         Controls.Add(RoundButton2)
         Controls.Add(RoundButton1)
         Controls.Add(Label1)
+        Margin = New Padding(2)
         Name = "Form4"
         Text = "Form4"
         ResumeLayout(False)

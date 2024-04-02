@@ -101,14 +101,14 @@ Partial Class Form1
         ' 
         TextBox3.Location = New Point(102, 346)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(633, 31)
+        TextBox3.Size = New Size(633, 23)
         TextBox3.TabIndex = 3
         ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(96, 231)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(645, 31)
+        TextBox2.Size = New Size(645, 23)
         TextBox2.TabIndex = 4
         ' 
         ' Button2
@@ -125,7 +125,7 @@ Partial Class Form1
         TextBox1.Location = New Point(102, 115)
         TextBox1.Margin = New Padding(0)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(645, 31)
+        TextBox1.Size = New Size(645, 23)
         TextBox1.TabIndex = 3
         ' 
         ' Label3
@@ -133,7 +133,7 @@ Partial Class Form1
         Label3.AutoSize = True
         Label3.Location = New Point(96, 285)
         Label3.Name = "Label3"
-        Label3.Size = New Size(97, 25)
+        Label3.Size = New Size(62, 15)
         Label3.TabIndex = 2
         Label3.Text = "Password:"
         ' 
@@ -142,7 +142,7 @@ Partial Class Form1
         Label2.AutoSize = True
         Label2.Location = New Point(96, 188)
         Label2.Name = "Label2"
-        Label2.Size = New Size(63, 25)
+        Label2.Size = New Size(39, 15)
         Label2.TabIndex = 1
         Label2.Text = "Email:"
         ' 
@@ -151,13 +151,13 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.Location = New Point(96, 55)
         Label1.Name = "Label1"
-        Label1.Size = New Size(102, 25)
+        Label1.Size = New Size(67, 15)
         Label1.TabIndex = 0
         Label1.Text = "Username:"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(11F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.GradientActiveCaption
         ClientSize = New Size(1349, 638)

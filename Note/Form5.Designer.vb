@@ -60,23 +60,21 @@ Partial Class Form5
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = SystemColors.ScrollBar
-        Button1.Location = New Point(15, 1131)
-        Button1.Margin = New Padding(4, 5, 4, 5)
+        Button1.Location = New Point(10, 679)
         Button1.Name = "Button1"
-        Button1.Padding = New Padding(2, 3, 2, 3)
-        Button1.Size = New Size(42, 55)
+        Button1.Padding = New Padding(1, 2, 1, 2)
+        Button1.Size = New Size(29, 33)
         Button1.TabIndex = 3
         Button1.UseVisualStyleBackColor = False
         ' 
         ' TextBox2
         ' 
         TextBox2.BackColor = Color.WhiteSmoke
-        TextBox2.Location = New Point(-1, 40)
-        TextBox2.Margin = New Padding(4, 5, 4, 5)
+        TextBox2.Location = New Point(-1, 24)
         TextBox2.Multiline = True
         TextBox2.Name = "TextBox2"
         TextBox2.ScrollBars = ScrollBars.Both
-        TextBox2.Size = New Size(1106, 1071)
+        TextBox2.Size = New Size(775, 644)
         TextBox2.TabIndex = 7
         ' 
         ' MenuStrip1
@@ -86,8 +84,7 @@ Partial Class Form5
         MenuStrip1.Items.AddRange(New ToolStripItem() {FileToolStripMenuItem, EditToolStripMenuItem, HelpToolStripMenuItem, FormatToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Padding = New Padding(8, 3, 0, 3)
-        MenuStrip1.Size = New Size(1105, 35)
+        MenuStrip1.Size = New Size(774, 24)
         MenuStrip1.TabIndex = 9
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -95,123 +92,123 @@ Partial Class Form5
         ' 
         FileToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {NewToolStripMenuItem, SaveToolStripMenuItem, ToolStripSeparator1, PrintToolStripMenuItem, ToolStripSeparator2, BackToolStripMenuItem})
         FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        FileToolStripMenuItem.Size = New Size(54, 29)
+        FileToolStripMenuItem.Size = New Size(37, 20)
         FileToolStripMenuItem.Text = "File"
         ' 
         ' NewToolStripMenuItem
         ' 
         NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         NewToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.N
-        NewToolStripMenuItem.Size = New Size(270, 34)
+        NewToolStripMenuItem.Size = New Size(180, 22)
         NewToolStripMenuItem.Text = "New"
         ' 
         ' SaveToolStripMenuItem
         ' 
         SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         SaveToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.S
-        SaveToolStripMenuItem.Size = New Size(270, 34)
+        SaveToolStripMenuItem.Size = New Size(180, 22)
         SaveToolStripMenuItem.Text = "Save"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(267, 6)
+        ToolStripSeparator1.Size = New Size(177, 6)
         ' 
         ' PrintToolStripMenuItem
         ' 
         PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         PrintToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.P
-        PrintToolStripMenuItem.Size = New Size(270, 34)
+        PrintToolStripMenuItem.Size = New Size(180, 22)
         PrintToolStripMenuItem.Text = "Print"
         ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
-        ToolStripSeparator2.Size = New Size(267, 6)
+        ToolStripSeparator2.Size = New Size(177, 6)
         ' 
         ' BackToolStripMenuItem
         ' 
         BackToolStripMenuItem.Name = "BackToolStripMenuItem"
-        BackToolStripMenuItem.Size = New Size(270, 34)
+        BackToolStripMenuItem.Size = New Size(180, 22)
         BackToolStripMenuItem.Text = "Back"
         ' 
         ' EditToolStripMenuItem
         ' 
         EditToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {UndoToolStripMenuItem, CopyToolStripMenuItem, CutToolStripMenuItem, PasteToolStripMenuItem, ToolStripSeparator3, SelectAllToolStripMenuItem})
         EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        EditToolStripMenuItem.Size = New Size(58, 29)
+        EditToolStripMenuItem.Size = New Size(39, 20)
         EditToolStripMenuItem.Text = "Edit"
         ' 
         ' UndoToolStripMenuItem
         ' 
         UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
         UndoToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.Z
-        UndoToolStripMenuItem.Size = New Size(248, 34)
+        UndoToolStripMenuItem.Size = New Size(164, 22)
         UndoToolStripMenuItem.Text = "Undo"
         ' 
         ' CopyToolStripMenuItem
         ' 
         CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         CopyToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.C
-        CopyToolStripMenuItem.Size = New Size(248, 34)
+        CopyToolStripMenuItem.Size = New Size(164, 22)
         CopyToolStripMenuItem.Text = "Copy"
         ' 
         ' CutToolStripMenuItem
         ' 
         CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         CutToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.X
-        CutToolStripMenuItem.Size = New Size(248, 34)
+        CutToolStripMenuItem.Size = New Size(164, 22)
         CutToolStripMenuItem.Text = "Cut"
         ' 
         ' PasteToolStripMenuItem
         ' 
         PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         PasteToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.P
-        PasteToolStripMenuItem.Size = New Size(248, 34)
+        PasteToolStripMenuItem.Size = New Size(164, 22)
         PasteToolStripMenuItem.Text = "Paste"
         ' 
         ' ToolStripSeparator3
         ' 
         ToolStripSeparator3.Name = "ToolStripSeparator3"
-        ToolStripSeparator3.Size = New Size(245, 6)
+        ToolStripSeparator3.Size = New Size(161, 6)
         ' 
         ' SelectAllToolStripMenuItem
         ' 
         SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         SelectAllToolStripMenuItem.ShortcutKeys = Keys.Control Or Keys.A
-        SelectAllToolStripMenuItem.Size = New Size(248, 34)
+        SelectAllToolStripMenuItem.Size = New Size(164, 22)
         SelectAllToolStripMenuItem.Text = "Select All"
         ' 
         ' HelpToolStripMenuItem
         ' 
         HelpToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AboutToolStripMenuItem})
         HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        HelpToolStripMenuItem.Size = New Size(65, 29)
+        HelpToolStripMenuItem.Size = New Size(44, 20)
         HelpToolStripMenuItem.Text = "Help"
         ' 
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(164, 34)
+        AboutToolStripMenuItem.Size = New Size(107, 22)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' FormatToolStripMenuItem
         ' 
         FormatToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {FontToolStripMenuItem, ColorToolStripMenuItem})
         FormatToolStripMenuItem.Name = "FormatToolStripMenuItem"
-        FormatToolStripMenuItem.Size = New Size(85, 29)
+        FormatToolStripMenuItem.Size = New Size(57, 20)
         FormatToolStripMenuItem.Text = "Format"
         ' 
         ' FontToolStripMenuItem
         ' 
         FontToolStripMenuItem.Name = "FontToolStripMenuItem"
-        FontToolStripMenuItem.Size = New Size(157, 34)
+        FontToolStripMenuItem.Size = New Size(103, 22)
         FontToolStripMenuItem.Text = "Font"
         ' 
         ' ColorToolStripMenuItem
         ' 
         ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        ColorToolStripMenuItem.Size = New Size(157, 34)
+        ColorToolStripMenuItem.Size = New Size(103, 22)
         ColorToolStripMenuItem.Text = "Color"
         ' 
         ' PrintDialog1
@@ -220,15 +217,14 @@ Partial Class Form5
         ' 
         ' Form5
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
-        ClientSize = New Size(1105, 1050)
+        ClientSize = New Size(774, 449)
         Controls.Add(TextBox2)
         Controls.Add(Button1)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
-        Margin = New Padding(4, 5, 4, 5)
         Name = "Form5"
         Text = "Form5"
         MenuStrip1.ResumeLayout(False)
