@@ -60,7 +60,12 @@ Partial Class Form3
         ' Button1
         ' 
         Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
+<<<<<<< HEAD
         Button1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+=======
+        Button1.Cursor = Cursors.Hand
+        Button1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+>>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
         Button1.ForeColor = Color.WhiteSmoke
         Button1.Location = New Point(809, 122)
         Button1.Margin = New Padding(2)
@@ -84,8 +89,14 @@ Partial Class Form3
         ' Button2
         ' 
         Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
+<<<<<<< HEAD
         Button2.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button2.Location = New Point(438, 122)
+=======
+        Button2.Cursor = Cursors.Hand
+        Button2.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(350, 98)
+>>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
         Button2.Margin = New Padding(2)
         Button2.Name = "Button2"
         Button2.Size = New Size(230, 294)
@@ -95,15 +106,24 @@ Partial Class Form3
         ' 
         ' Button5
         ' 
+<<<<<<< HEAD
         Button5.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Button5.Font = New Font("Rage Italic", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button5.Location = New Point(1405, 638)
+=======
+        Button5.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        Button5.BackColor = Color.Gainsboro
+        Button5.Cursor = Cursors.Hand
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Font = New Font("Rage Italic", 16.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.Location = New Point(1124, 510)
+>>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
         Button5.Margin = New Padding(2)
         Button5.Name = "Button5"
         Button5.Size = New Size(170, 41)
         Button5.TabIndex = 6
         Button5.Text = "Add Folder"
-        Button5.UseVisualStyleBackColor = True
+        Button5.UseVisualStyleBackColor = False
         ' 
         ' TextBox1
         ' 
@@ -132,8 +152,14 @@ Partial Class Form3
         ' Button3
         ' 
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
+<<<<<<< HEAD
         Button3.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button3.Location = New Point(48, 122)
+=======
+        Button3.Cursor = Cursors.Hand
+        Button3.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button3.Location = New Point(38, 98)
+>>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
         Button3.Margin = New Padding(2)
         Button3.Name = "Button3"
         Button3.Size = New Size(230, 294)
@@ -279,7 +305,12 @@ Partial Class Form3
         ' 
         ' Panel2
         ' 
+
         Panel2.Controls.Add(Label5)
+=======
+        Panel2.AutoSize = True
+        Panel2.Controls.Add(PictureBox1)
+>>>>>>> 053ab7b7a9dbb6ecb5b51ef9da5ad62e1ee91037
         Panel2.Controls.Add(Button2)
         Panel2.Controls.Add(Button5)
         Panel2.Controls.Add(Button3)
@@ -337,6 +368,7 @@ Partial Class Form3
         Panel2.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Button1 As Button

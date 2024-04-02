@@ -48,18 +48,17 @@ Public Class Form3
         Dim newFolder As New UserControl1
 
         ' Calculate the position for the new folder
-        Dim x As Integer = Button3.Location.X + 350 ' Set initial x-coordinate to the edge of the page
-        Dim y As Integer = Button3.Location.Y ' Set y-coordinate below the last button
-        For Each control As Control In Me.Controls
+        Dim x As Integer = Button1.Location.X + 350 ' Set initial x-coordinate to the edge of the page
+        Dim y As Integer = Button1.Location.Y ' Set y-coordinate below the last button
+        For Each control As Control In Panel2.Controls ' Iterate through controls within the panel
             If TypeOf control Is UserControl1 Then
                 Dim folder As UserControl1 = DirectCast(control, UserControl1)
-                If folder.Location.X + folder.Width + 125 < Me.ClientSize.Width Then
-                    ' Move to the next position
+                If folder.Location.X + folder.Width + 125 < Panel2.ClientSize.Width Then
                     x = folder.Location.X + folder.Width + 125
                     y = folder.Location.Y
                 Else
                     ' Start a new row
-                    x = 83
+                    x = 83 ' Reset x-coordinate to start a new row
                     y = folder.Location.Y + folder.Height + 60
                 End If
             End If
@@ -68,10 +67,8 @@ Public Class Form3
         ' Set the location of the new folder
         newFolder.Location = New Point(x, y)
 
-        ' Add the new folder control to the form
-        Me.Controls.Add(newFolder)
-
-
+        ' Add the new folder control to the panel
+        Panel2.Controls.Add(newFolder)
     End Sub
 
 

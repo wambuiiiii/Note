@@ -172,7 +172,9 @@ Partial Class Form1
         ClientSize = New Size(498, 662)
         Controls.Add(Panel1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        MaximizeBox = False
         Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Signup"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
