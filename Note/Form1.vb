@@ -73,20 +73,6 @@ Public Class Form1
     End Sub
 
 
-
-
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Dim form2Instance As New Form2()
-
-
-        form2Instance.Show()
-
-
-        Me.Hide()
-    End Sub
-
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 

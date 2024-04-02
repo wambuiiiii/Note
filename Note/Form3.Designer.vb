@@ -59,19 +59,12 @@ Partial Class Form3
         ' Button1
         ' 
         Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
-
         Button1.Cursor = Cursors.Hand
-        Button1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(420, 76)
+        Button1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(362, 76)
         Button1.Margin = New Padding(2)
         Button1.Name = "Button1"
         Button1.Size = New Size(184, 235)
-
-        Button1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(107, 124)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(161, 176)
-
         Button1.TabIndex = 0
         Button1.Text = "Personal"
         Button1.UseVisualStyleBackColor = True
@@ -79,13 +72,9 @@ Partial Class Form3
         ' Label1
         ' 
         Label1.AutoSize = True
-
         Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(505, 16)
         Label1.Margin = New Padding(2, 0, 2, 0)
-
-        Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(821, 12)
         Label1.Name = "Label1"
         Label1.Size = New Size(182, 43)
         Label1.TabIndex = 1
@@ -93,7 +82,6 @@ Partial Class Form3
         ' 
         ' Button2
         ' 
-
         Button2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
         Button2.AutoSize = True
         Button2.BackColor = SystemColors.ButtonFace
@@ -105,67 +93,39 @@ Partial Class Form3
         Button2.Margin = New Padding(2)
         Button2.Name = "Button2"
         Button2.Size = New Size(143, 46)
-        Button2.TabIndex = 2
-
-        Button2.BackColor = Color.WhiteSmoke
-        Button2.Font = New Font("Rage Italic", 16.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(1625, 605)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(230, 294)
         Button2.TabIndex = 1
-
         Button2.Text = "Add Folder"
         Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
-
         Button3.Cursor = Cursors.Hand
         Button3.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.Location = New Point(112, 76)
-        Button3.Margin = New Padding(2)
+        Button3.Location = New Point(53, 76)
         Button3.Name = "Button3"
         Button3.Size = New Size(184, 235)
         Button3.TabIndex = 3
-
-        Button3.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.Location = New Point(793, 125)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(230, 294)
-        Button3.TabIndex = 2
-
         Button3.Text = "Travel"
         Button3.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
         Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), Image)
-
         Button4.Cursor = Cursors.Hand
         Button4.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button4.ForeColor = SystemColors.ButtonHighlight
-        Button4.Location = New Point(747, 76)
+        Button4.Location = New Point(700, 76)
         Button4.Margin = New Padding(2)
         Button4.Name = "Button4"
         Button4.Size = New Size(184, 235)
-
-        Button4.Location = New Point(1340, 12)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(38, 34)
-
         Button4.TabIndex = 4
         Button4.Text = "Work"
         Button4.UseVisualStyleBackColor = True
         ' 
         ' Button5
         ' 
-
         Button5.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-
-        TextBox1.Location = New Point(1378, 12)
-        TextBox1.Name = "TextBox1"
-
         Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), Image)
         Button5.BackgroundImageLayout = ImageLayout.Zoom
         Button5.Cursor = Cursors.Hand
@@ -174,16 +134,12 @@ Partial Class Form3
         Button5.Location = New Point(900, 16)
         Button5.Margin = New Padding(2)
         Button5.Name = "Button5"
-
         Button5.Size = New Size(31, 27)
-
-        TextBox1.TabIndex = 5
-
         Button5.TabIndex = 5
+        Button5.UseVisualStyleBackColor = True
         ' 
         ' TextBox1
         ' 
-
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         TextBox1.Location = New Point(946, 16)
         TextBox1.Margin = New Padding(2)
@@ -356,25 +312,6 @@ Partial Class Form3
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Margin = New Padding(2)
-
-        TextBox1.Location = New Point(1387, 12)
-        TextBox1.Size = New Size(355, 31)
-        TextBox1.TabIndex = 6
-        TextBox1.TabIndex = 6
-        ' Form3
-        ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
-        AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.WhiteSmoke
-        ClientSize = New Size(1825, 693)
-        Controls.Add(Button5)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Label1)
-        Controls.Add(Button1)
-        Margin = New Padding(2, 2, 2, 2)
-
         Name = "Form3"
         Text = "Form3"
         Panel1.ResumeLayout(False)
@@ -392,6 +329,7 @@ Partial Class Form3
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
+
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
