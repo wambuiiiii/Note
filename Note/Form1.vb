@@ -9,6 +9,8 @@ Public Class Form1
         Dim currentText = TextBox3.Text
     End Sub
 
+    End Sub
+
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
@@ -56,6 +58,19 @@ Public Class Form1
 
 
 
+        connection.Close()
+
+        Me.Hide()
+        Form2.Show()
+
+        Me.Hide()
+
+
+
+    End Sub
+
+
+
 
         Form2.Show()
 
@@ -65,6 +80,7 @@ Public Class Form1
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
 
     End Sub
 
