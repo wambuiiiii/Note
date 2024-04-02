@@ -32,6 +32,7 @@ Partial Class Form3
         Button4 = New Button()
         Button3 = New Button()
         Panel1 = New Panel()
+        PictureBox5 = New PictureBox()
         Panel5 = New Panel()
         Label3 = New Label()
         Label2 = New Label()
@@ -42,32 +43,29 @@ Partial Class Form3
         Panel3 = New Panel()
         Label5 = New Label()
         PictureBox2 = New PictureBox()
-        Panel2 = New Panel()
         PictureBox1 = New PictureBox()
+        Panel2 = New Panel()
         openmenu = New Timer(components)
         closemenu = New Timer(components)
         Panel1.SuspendLayout()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel4.SuspendLayout()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
         ' 
         Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
-
-        Button1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-
         Button1.Cursor = Cursors.Hand
-        Button1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-
+        Button1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.WhiteSmoke
-        Button1.Location = New Point(809, 122)
+        Button1.Location = New Point(793, 98)
         Button1.Margin = New Padding(2)
         Button1.Name = "Button1"
         Button1.Size = New Size(230, 294)
@@ -78,8 +76,8 @@ Partial Class Form3
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(502, 14)
+        Label1.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(583, 3)
         Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(212, 50)
@@ -89,14 +87,9 @@ Partial Class Form3
         ' Button2
         ' 
         Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
-
-        Button2.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(438, 122)
-
         Button2.Cursor = Cursors.Hand
-        Button2.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(350, 98)
-
+        Button2.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button2.Location = New Point(438, 98)
         Button2.Margin = New Padding(2)
         Button2.Name = "Button2"
         Button2.Size = New Size(230, 294)
@@ -106,18 +99,12 @@ Partial Class Form3
         ' 
         ' Button5
         ' 
-
-        Button5.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        Button5.Font = New Font("Rage Italic", 16.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.Location = New Point(1405, 638)
-
         Button5.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        Button5.BackColor = Color.Gainsboro
+        Button5.BackColor = Color.WhiteSmoke
         Button5.Cursor = Cursors.Hand
         Button5.FlatStyle = FlatStyle.Flat
-        Button5.Font = New Font("Rage Italic", 16.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.Location = New Point(1124, 510)
-
+        Button5.Font = New Font("Rage Italic", 16F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button5.Location = New Point(1268, 640)
         Button5.Margin = New Padding(2)
         Button5.Name = "Button5"
         Button5.Size = New Size(170, 41)
@@ -128,38 +115,33 @@ Partial Class Form3
         ' TextBox1
         ' 
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        TextBox1.Location = New Point(1258, 14)
+        TextBox1.Location = New Point(1245, 17)
         TextBox1.Margin = New Padding(2)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(316, 31)
+        TextBox1.Size = New Size(303, 31)
         TextBox1.TabIndex = 5
         ' 
         ' Button4
         ' 
         Button4.BackColor = Color.Transparent
         Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), Image)
-        Button4.BackgroundImageLayout = ImageLayout.Zoom
+        Button4.BackgroundImageLayout = ImageLayout.None
         Button4.Cursor = Cursors.Hand
         Button4.FlatAppearance.BorderSize = 0
         Button4.FlatStyle = FlatStyle.Flat
-        Button4.Location = New Point(1199, 6)
+        Button4.Location = New Point(1208, 13)
         Button4.Margin = New Padding(2)
         Button4.Name = "Button4"
-        Button4.Size = New Size(42, 45)
+        Button4.Size = New Size(38, 38)
         Button4.TabIndex = 4
         Button4.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
-
-        Button3.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.Location = New Point(48, 122)
-
         Button3.Cursor = Cursors.Hand
-        Button3.Font = New Font("Rage Italic", 20.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.Location = New Point(38, 98)
-
+        Button3.Font = New Font("Rage Italic", 20F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button3.Location = New Point(83, 98)
         Button3.Margin = New Padding(2)
         Button3.Name = "Button3"
         Button3.Size = New Size(230, 294)
@@ -169,8 +151,9 @@ Partial Class Form3
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Panel1.Controls.Add(PictureBox1)
+        Panel1.BackColor = SystemColors.GradientInactiveCaption
+        Panel1.BackgroundImageLayout = ImageLayout.Zoom
+        Panel1.Controls.Add(PictureBox5)
         Panel1.Controls.Add(Panel5)
         Panel1.Controls.Add(Panel4)
         Panel1.Controls.Add(Panel3)
@@ -178,8 +161,18 @@ Partial Class Form3
         Panel1.Location = New Point(0, 0)
         Panel1.Margin = New Padding(4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(237, 692)
+        Panel1.Size = New Size(214, 692)
         Panel1.TabIndex = 7
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), Image)
+        PictureBox5.BackgroundImageLayout = ImageLayout.Stretch
+        PictureBox5.Location = New Point(0, 236)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(193, 336)
+        PictureBox5.TabIndex = 7
+        PictureBox5.TabStop = False
         ' 
         ' Panel5
         ' 
@@ -189,27 +182,27 @@ Partial Class Form3
         Panel5.Controls.Add(Label2)
         Panel5.Controls.Add(PictureBox4)
         Panel5.Cursor = Cursors.Hand
-        Panel5.Location = New Point(0, 521)
+        Panel5.Location = New Point(6, 599)
         Panel5.Margin = New Padding(4)
         Panel5.Name = "Panel5"
-        Panel5.Size = New Size(218, 72)
+        Panel5.Size = New Size(187, 59)
         Panel5.TabIndex = 1
         ' 
         ' Label3
         ' 
-        Label3.Font = New Font("Rage Italic", 15.0F)
-        Label3.ForeColor = Color.WhiteSmoke
-        Label3.Location = New Point(69, 21)
+        Label3.Font = New Font("Rage Italic", 15F)
+        Label3.ForeColor = Color.Black
+        Label3.Location = New Point(69, 11)
         Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(126, 31)
+        Label3.Size = New Size(96, 41)
         Label3.TabIndex = 2
         Label3.Text = "Logout"
         Label3.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label2
         ' 
-        Label2.Font = New Font("Yu Gothic", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Yu Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(69, 21)
         Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
@@ -226,7 +219,7 @@ Partial Class Form3
         PictureBox4.Location = New Point(0, 0)
         PictureBox4.Margin = New Padding(4)
         PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(61, 70)
+        PictureBox4.Size = New Size(61, 57)
         PictureBox4.TabIndex = 0
         PictureBox4.TabStop = False
         ' 
@@ -237,20 +230,20 @@ Partial Class Form3
         Panel4.Controls.Add(Label4)
         Panel4.Controls.Add(PictureBox3)
         Panel4.Cursor = Cursors.Hand
-        Panel4.Location = New Point(11, 212)
+        Panel4.Location = New Point(4, 146)
         Panel4.Margin = New Padding(4)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(218, 72)
+        Panel4.Size = New Size(189, 59)
         Panel4.TabIndex = 1
         ' 
         ' Label4
         ' 
-        Label4.Font = New Font("Rage Italic", 15.0F)
-        Label4.ForeColor = Color.WhiteSmoke
-        Label4.Location = New Point(69, 21)
+        Label4.Font = New Font("Rage Italic", 15F)
+        Label4.ForeColor = Color.Black
+        Label4.Location = New Point(71, 12)
         Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(126, 31)
+        Label4.Size = New Size(96, 31)
         Label4.TabIndex = 3
         Label4.Text = "Themes"
         Label4.TextAlign = ContentAlignment.MiddleCenter
@@ -263,7 +256,7 @@ Partial Class Form3
         PictureBox3.Location = New Point(0, 0)
         PictureBox3.Margin = New Padding(4)
         PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(61, 70)
+        PictureBox3.Size = New Size(61, 57)
         PictureBox3.TabIndex = 0
         PictureBox3.TabStop = False
         ' 
@@ -271,22 +264,23 @@ Partial Class Form3
         ' 
         Panel3.BackColor = Color.Transparent
         Panel3.BorderStyle = BorderStyle.FixedSingle
+        Panel3.Controls.Add(Label5)
         Panel3.Controls.Add(PictureBox2)
         Panel3.Cursor = Cursors.Hand
-        Panel3.Location = New Point(11, 84)
+        Panel3.Location = New Point(5, 36)
         Panel3.Margin = New Padding(4)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(218, 72)
+        Panel3.Size = New Size(188, 59)
         Panel3.TabIndex = 0
         ' 
         ' Label5
         ' 
-        Label5.Font = New Font("Rage Italic", 15.0F)
-        Label5.ForeColor = Color.WhiteSmoke
-        Label5.Location = New Point(8, 74)
+        Label5.Font = New Font("Rage Italic", 15F)
+        Label5.ForeColor = Color.Black
+        Label5.Location = New Point(68, 12)
         Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(126, 31)
+        Label5.Size = New Size(110, 32)
         Label5.TabIndex = 3
         Label5.Text = "Settings"
         Label5.TextAlign = ContentAlignment.MiddleCenter
@@ -299,33 +293,14 @@ Partial Class Form3
         PictureBox2.Location = New Point(0, 0)
         PictureBox2.Margin = New Padding(4)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(61, 70)
+        PictureBox2.Size = New Size(61, 57)
         PictureBox2.TabIndex = 0
         PictureBox2.TabStop = False
         ' 
-        ' Panel2
-        ' 
-
-        Panel2.Controls.Add(Label5)
-
-        Panel2.Controls.Add(PictureBox1)
-
-        Panel2.Controls.Add(Button2)
-        Panel2.Controls.Add(Button5)
-        Panel2.Controls.Add(Button3)
-        Panel2.Controls.Add(Button1)
-        Panel2.Controls.Add(Button4)
-        Panel2.Controls.Add(TextBox1)
-        Panel2.Controls.Add(Label1)
-        Panel2.Dock = DockStyle.Fill
-        Panel2.Location = New Point(237, 0)
-        Panel2.Margin = New Padding(4)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(1588, 692)
-        Panel2.TabIndex = 8
-        ' 
         ' PictureBox1
         ' 
+        PictureBox1.BackColor = Color.WhiteSmoke
+        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
         PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
@@ -337,6 +312,24 @@ Partial Class Form3
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.WhiteSmoke
+        Panel2.Controls.Add(PictureBox1)
+        Panel2.Controls.Add(Button2)
+        Panel2.Controls.Add(Button5)
+        Panel2.Controls.Add(Button3)
+        Panel2.Controls.Add(Button1)
+        Panel2.Controls.Add(Button4)
+        Panel2.Controls.Add(TextBox1)
+        Panel2.Controls.Add(Label1)
+        Panel2.Dock = DockStyle.Fill
+        Panel2.Location = New Point(214, 0)
+        Panel2.Margin = New Padding(4)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1611, 692)
+        Panel2.TabIndex = 8
+        ' 
         ' openmenu
         ' 
         ' 
@@ -345,7 +338,7 @@ Partial Class Form3
         ' 
         ' Form3
         ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         AutoSize = True
@@ -357,17 +350,17 @@ Partial Class Form3
         Name = "Form3"
         Text = "Form3"
         Panel1.ResumeLayout(False)
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel4.ResumeLayout(False)
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Button1 As Button
@@ -392,4 +385,5 @@ Partial Class Form3
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents PictureBox5 As PictureBox
 End Class

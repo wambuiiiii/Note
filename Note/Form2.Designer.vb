@@ -32,6 +32,7 @@ Partial Class Form2
         PictureBox1 = New PictureBox()
         Label2 = New Label()
         Label1 = New Label()
+        RoundButton1 = New RoundButton()
         Panel1.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -39,12 +40,12 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.LightSteelBlue
+        Button1.BackColor = SystemColors.GradientInactiveCaption
         Button1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Button1.Location = New Point(56, 401)
         Button1.Margin = New Padding(2)
         Button1.Name = "Button1"
-        Button1.Size = New Size(435, 59)
+        Button1.Size = New Size(435, 41)
         Button1.TabIndex = 0
         Button1.Text = "Login"
         Button1.UseVisualStyleBackColor = False
@@ -68,6 +69,7 @@ Partial Class Form2
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.ControlLightLight
+        Panel1.Controls.Add(RoundButton1)
         Panel1.Controls.Add(LinkLabel1)
         Panel1.Controls.Add(PictureBox2)
         Panel1.Controls.Add(PictureBox1)
@@ -76,7 +78,7 @@ Partial Class Form2
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(TextBox2)
-        Panel1.Location = New Point(45, 66)
+        Panel1.Location = New Point(215, 96)
         Panel1.Margin = New Padding(2)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(519, 630)
@@ -90,7 +92,7 @@ Partial Class Form2
         LinkLabel1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
         LinkLabel1.LinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        LinkLabel1.Location = New Point(158, 480)
+        LinkLabel1.Location = New Point(150, 470)
         LinkLabel1.Margin = New Padding(4, 0, 4, 0)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(235, 30)
@@ -144,12 +146,24 @@ Partial Class Form2
         Label1.TabIndex = 4
         Label1.Text = "Email:"
         ' 
+        ' RoundButton1
+        ' 
+        RoundButton1.BackColor = Color.Transparent
+        RoundButton1.BackgroundImage = CType(resources.GetObject("RoundButton1.BackgroundImage"), Image)
+        RoundButton1.FlatAppearance.BorderSize = 0
+        RoundButton1.FlatStyle = FlatStyle.Flat
+        RoundButton1.Location = New Point(455, 303)
+        RoundButton1.Name = "RoundButton1"
+        RoundButton1.Size = New Size(34, 34)
+        RoundButton1.TabIndex = 9
+        RoundButton1.UseVisualStyleBackColor = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ActiveCaption
-        ClientSize = New Size(611, 810)
+        BackColor = SystemColors.GradientActiveCaption
+        ClientSize = New Size(934, 810)
         Controls.Add(Panel1)
         Margin = New Padding(2)
         MaximizeBox = False
@@ -172,4 +186,5 @@ Partial Class Form2
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents RoundButton1 As RoundButton
 End Class

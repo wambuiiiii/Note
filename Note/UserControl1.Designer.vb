@@ -53,7 +53,7 @@ Partial Class UserControl1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.InactiveCaption
+        BackColor = SystemColors.GradientInactiveCaption
         Controls.Add(Label1)
         Controls.Add(btnEdit)
         Name = "UserControl1"

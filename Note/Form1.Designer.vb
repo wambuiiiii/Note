@@ -43,10 +43,10 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.LightSteelBlue
-        Button1.Location = New Point(69, 420)
+        Button1.BackColor = SystemColors.GradientInactiveCaption
+        Button1.Location = New Point(69, 431)
         Button1.Name = "Button1"
-        Button1.Size = New Size(346, 47)
+        Button1.Size = New Size(346, 39)
         Button1.TabIndex = 0
         Button1.Text = "Signup"
         Button1.UseVisualStyleBackColor = False
@@ -65,9 +65,9 @@ Partial Class Form1
         Panel1.Controls.Add(Button1)
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(21, 12)
+        Panel1.Location = New Point(153, 26)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(446, 624)
+        Panel1.Size = New Size(533, 624)
         Panel1.TabIndex = 1
         ' 
         ' LinkLabel1
@@ -78,7 +78,7 @@ Partial Class Form1
         LinkLabel1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         LinkLabel1.LinkBehavior = LinkBehavior.HoverUnderline
         LinkLabel1.LinkColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        LinkLabel1.Location = New Point(84, 499)
+        LinkLabel1.Location = New Point(50, 497)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(383, 30)
         LinkLabel1.TabIndex = 9
@@ -169,7 +169,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(11F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.GradientActiveCaption
-        ClientSize = New Size(498, 662)
+        ClientSize = New Size(881, 662)
         Controls.Add(Panel1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         MaximizeBox = False
