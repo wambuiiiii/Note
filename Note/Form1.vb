@@ -1,4 +1,5 @@
-﻿Imports Microsoft.VisualBasic.ApplicationServices
+﻿Imports System.Text.RegularExpressions
+Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySqlConnector
 
 Public Class Form1
@@ -21,9 +22,9 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Form2.Show()
-        Me.Hide()
+        Hide()
 
     End Sub
 
@@ -35,6 +36,7 @@ Public Class Form1
         username = Me.TextBox1.Text
         email = Me.TextBox2.Text
         password = Me.TextBox3.Text
+        Dim passwordRegex As New Regex("^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$")
 
         ' Wait for a brief moment (e.g., 500 milliseconds) before hiding the characters
         Threading.Thread.Sleep(3000)
@@ -88,6 +90,11 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Form2.Show()
+        Me.Hide()
     End Sub
 
 

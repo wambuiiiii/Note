@@ -138,7 +138,7 @@ Partial Class Form3
         Button3.Text = "Travel"
         Button3.UseVisualStyleBackColor = True
         ' 
-        ' Label1
+        ' Button4
         ' 
         Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), Image)
 
@@ -158,7 +158,7 @@ Partial Class Form3
         Button4.Text = "Work"
         Button4.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' Button5
         ' 
 
         Button5.Anchor = AnchorStyles.Top Or AnchorStyles.Right
@@ -180,10 +180,8 @@ Partial Class Form3
         TextBox1.TabIndex = 5
 
         Button5.TabIndex = 5
-        ' Button5
         ' 
-        Button5.Font = New Font("Rage Italic", 16.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.Location = New Point(83, 30)
+        ' TextBox1
         ' 
 
         TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
